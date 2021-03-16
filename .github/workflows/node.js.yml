@@ -27,8 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-    needs: build
-        os: [ubuntu-latest, windows-2016]
+      needs: build
         node-version: [12.x, 14.x]
     steps:
     - uses: actions/checkout@v2
